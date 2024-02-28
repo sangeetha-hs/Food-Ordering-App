@@ -3,9 +3,9 @@ import { useState,useEffect ,useContext} from "react";
 import {Link} from "react-router-dom";
 import useOnlineStatus from "../utilis/useOnlineStatus";
 import UserContext from "../utilis/userContext";
-import cartSlice from "../utilis/cartSlice";
-import { useSelector } from "react-redux";
 
+import cartSlice from "../utilis/cartSlice";
+import { UseSelector } from "react-redux";
 
  const Header = () => {
   const [btnNameReact,setBtnNameReact]=useState('login');
@@ -13,10 +13,8 @@ import { useSelector } from "react-redux";
 
 
   const onlineStatus=useOnlineStatus();
-
   const {loggedInUser}=useContext(UserContext);
-
- const cartItems = useSelector((store) => store.cart.items);
+  const cartItems = useSelector((store) => store.cart.items);
 console.log(cartItems)
   //console.log(loggedInUser)
 //subscrobing to the store using a selector
@@ -54,10 +52,6 @@ console.log(cartItems)
             <li className="px-4 font-bold text-xl">
               
               <Link to="/cart">Cart-({cartItems.length}items)</Link>
-
-              {/* <Link to="/cart">(
-                {cartItems.length===1 ? `${cartItems.length} item` : `${cartItems.length} items`}
-              )</Link> */}
               </li>
             <button className="login" onClick={()=>{
                  btnNameReact==="login"
