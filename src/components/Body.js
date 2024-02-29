@@ -36,8 +36,8 @@ console.log(listOfRestuarant)
 //setListOfRestuarant(json.data.cards[3].card.card.gridElements.infoWithStyle.restaurants);
 
 
-setListOfRestuarant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)  
-setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+setListOfRestuarant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants ||  json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)  
+setFilteredRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 }
 
 //conditional rendering=rendering based on the condition 

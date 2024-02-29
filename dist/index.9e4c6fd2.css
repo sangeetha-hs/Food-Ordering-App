@@ -29,7 +29,6 @@ hr {
 }
 
 abbr:where([title]) {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -532,5 +531,4 @@ img, video {
     background-color: rgb(254 252 232 / var(--tw-bg-opacity));
   }
 }
-
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
