@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 {
   "plugins": {
     "tailwindcss": {}
   }
+=======
+{
+  "plugins": {
+    "tailwindcss": {}
+  }
+>>>>>>> 6753e2b004c665cb8d020f66d9c593463f3d3e48
 }
