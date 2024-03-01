@@ -72,11 +72,11 @@ import { useState } from "react";
       console.log(resInfo)
 
 if(resInfo===null) return <Shimmer/>;
-    var {name,cuisines,cloudinaryImageId,costForTwoMessage}=resInfo?.cards[2].card.card.info;
+    var {name,cuisines,cloudinaryImageId,costForTwoMessage}=resInfo?.cards[0].card.card.info;
 
  
-const itemCards=resInfo?.cards[4].groupedCard.cardGroupMap.REGULAR.cards
-console.log(resInfo?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card)
+const itemCards=resInfo?.cards[2].groupedCard.cardGroupMap.REGULAR.cards
+console.log(resInfo?.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card)
 
 
 //data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
